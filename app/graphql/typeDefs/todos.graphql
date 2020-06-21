@@ -1,0 +1,10 @@
+type Query{
+    findTodos:[Todo]!,
+    findTodoById(id:Int!):Todo
+}
+type Todo{
+    id: Int,
+    userId: Int,
+    title: String,
+    completed: Boolean
+}
